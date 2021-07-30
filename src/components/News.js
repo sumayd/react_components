@@ -4,12 +4,15 @@ import NewsItem from './NewsItem';
 
 class News extends React.Component{
     render(){
+        const elements = this.props.news.map(news => 
+            <NewsItem
+                key={news}
+                title={news.title}
+            />
+        );
         return(
             <div>
-                <NewsItem/>
-                <NewsItem/>
-                <NewsItem/>
-                <NewsItem/>
+                { elements }
             </div>
         )
     }
