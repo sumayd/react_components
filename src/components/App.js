@@ -24,7 +24,7 @@ class App extends Component{
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <News news={news}/>
+        <News news={news} name="Sümeyye"/>
       </div>
     );
   }
