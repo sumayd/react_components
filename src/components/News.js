@@ -4,8 +4,11 @@ import NewsItem from './NewsItem';
 
 class News extends React.Component{
     static propTypes = {
-        news: PropTypes.array,
-        nam: PropTypes.string
+        news: PropTypes.array.isRequired,
+        name: PropTypes.oneOfType([
+            PropTypes.number,
+            PropTypes.string
+        ]).isRequired
     };
     render(){
         const elements = this.props.news.map(news => 
