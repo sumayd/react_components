@@ -4,6 +4,7 @@ import '../App.css';
 
 // import News from './News';
 import Counter from './Counter';
+import Footer from './Footer';
 /*
 const news = [{
   id: 1,
@@ -47,6 +48,7 @@ class App extends Component{
         <h2>{ this.state.sureName }</h2> 
         <News news={news} addNews={this.addNews}/>*/}
         <Counter />
+        <Footer />
       </div>
     );
   }
