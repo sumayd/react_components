@@ -19,6 +19,17 @@ id:3,
   description: "description 3"
 }];
 class App extends Component{
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //      name: 'Sümeyye'
+  //   }
+  // }
+
+  state = {
+    sureName: 'Aydemir'
+  };
+  
   addNews(){
     console.log('run function :)');
     news.push({
@@ -34,6 +45,8 @@ class App extends Component{
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
+        <h1>{ this.state.name }</h1>
+        <h2>{ this.state.sureName }</h2>
         <News news={news} addNews={this.addNews}/>
       </div>
     );
