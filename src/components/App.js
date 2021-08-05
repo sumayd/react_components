@@ -1,10 +1,10 @@
+import { Component } from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 
-import News from './News';
-import { Component } from 'react';
-
-
+// import News from './News';
+import Counter from './Counter';
+/*
 const news = [{
   id: 1,
   title: "title 1",
@@ -18,13 +18,14 @@ id:3,
   title: "title 3",
   description: "description 3"
 }];
+*/
 class App extends Component{
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //      name: 'Sümeyye'
-  //   }
-  // }
+  /*constructor(props) {
+    super(props)
+    this.state = {
+       name: 'Sümeyye'
+    }
+  }
 
   state = {
     sureName: 'Aydemir'
@@ -38,16 +39,14 @@ class App extends Component{
       description: 'description 4'
     });
     console.log(news);
-  }
+  }*/
   render(){
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-        <h1>{ this.state.name }</h1>
-        <h2>{ this.state.sureName }</h2>
-        <News news={news} addNews={this.addNews}/>
+        {/* <h1>{ this.state.name }</h1>
+        <h2>{ this.state.sureName }</h2> 
+        <News news={news} addNews={this.addNews}/>*/}
+        <Counter />
       </div>
     );
   }
